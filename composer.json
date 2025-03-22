@@ -1,0 +1,16 @@
+{
+    "name": "manya/manya",
+    "autoload": {
+        "psr-4": {
+            "Manya\\Manya\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "dankazadi"
+        }
+    ],
+    "require": {
+        "mpdf/mpdf": "^8.2"
+    }
+}

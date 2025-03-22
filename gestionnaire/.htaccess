@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteRule ^accueil$ index.php
+RewriteRule ^connexion$ connexion.php
+RewriteRule ^enregistreretudiant$ enregistreretudiant.php
+RewriteRule ^valideretudiant$ valideretudiant.php
+
+
+
+RewriteRule ^esetudiantsnonvalides$ esetudiantsnonvalides.php
+
