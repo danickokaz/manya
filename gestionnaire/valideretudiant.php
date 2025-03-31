@@ -188,6 +188,26 @@ if(isset($_SESSION['jgm']) and !empty($_SESSION['jgm'])){
                 })
             });
 
+            $(document).on('click', '.invalider', function() {
+                var matricule = $(this).attr('id');
+              
+                $.ajax({
+                    url: 'traitement/invalidation_etudiant_1.php',
+                    method: 'POST',
+                    dataType: 'text',
+                    data: {matricule:matricule},
+                    timeout: 8000,
+                    error: function(xhr,status,error){
+                        console.log(xhr)
+                    },
+                    success: function(reponse_serveur){
+                        if(reponse_serveur=="Success"){
+                            recupererEtudiants()
+                        }
+                    }
+                })
+            });
+
             $("#inscription").change(()=>{
                 var id = $("#inscription").val()
                 if(id!=""){

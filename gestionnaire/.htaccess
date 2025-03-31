@@ -3,8 +3,16 @@ RewriteRule ^accueil$ index.php
 RewriteRule ^connexion$ connexion.php
 RewriteRule ^enregistreretudiant$ enregistreretudiant.php
 RewriteRule ^valideretudiant$ valideretudiant.php
+RewriteRule ^capture$ capture.php
+RewriteRule ^ajouterclasse$ ajouterclasse.php
+RewriteRule ^archiverdossier$ archiverdossier.php
+RewriteRule ^deconnexion$ deconnexion.php
 
 
 
-RewriteRule ^esetudiantsnonvalides$ esetudiantsnonvalides.php
+
+
+
+RewriteRule ^photo/([a-zA-Z0-9]+)$ photo.php?matricule=$1 [L,QSA]
+RewriteRule ^esetudiantsnonvalides/([0-9]+)$ esetudiantsnonvalides.php?inscription=$1 [L,QSA]
 

@@ -2,7 +2,7 @@
 session_start();
 require '../../settings/db.php';
 
-$req = database()->prepare("SELECT e.matricule,CONCAT(e.prenom,' ',e.nom,' ', e.postnom) nomcomplet,g.libelle_genre,ec.libelle_etat_civil,e.telephone,ti.libelle_type_inscription FROM 
+$req = database()->prepare("SELECT e.matricule,CONCAT(e.nom,' ',e.postnom,' ', e.prenom) nomcomplet,g.libelle_genre,ec.libelle_etat_civil,e.telephone,ti.libelle_type_inscription FROM 
 etudiant e LEFT JOIN etat_civil ec ON ec.id = e.id_etat_civile INNER JOIN type_inscription ti ON ti.id = e.id_type_inscription
 LEFT JOIN genre g ON g.id = e.genre ORDER BY e.id DESC");
 $req->execute();

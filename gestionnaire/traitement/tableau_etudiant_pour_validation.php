@@ -64,7 +64,7 @@ if(isset($_POST['id']) and !empty($_POST['id'])){
                     <td>'.$donnee->libelle_etat_civil.'</td>
                     <td>'.$donnee->telephone.'</td>
                     <td>'.$donnee->libelle_type_inscription.'</td>
-                    <td><i class="text-primary fa fa-times nepasvalider" id="'.$donnee->matricule.'" style="cursor:pointer;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ne pas valider l\'étudiant(e)" ></i></td>
+                    <td><i class="text-primary fa fa-times invalider" id="'.$donnee->matricule.'" style="cursor:pointer;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Invalider l\'étudiant(e)" ></i></td>
                 </tr>
             
             ';
