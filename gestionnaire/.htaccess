@@ -7,8 +7,36 @@ RewriteRule ^capture$ capture.php
 RewriteRule ^ajouterclasse$ ajouterclasse.php
 RewriteRule ^archiverdossier$ archiverdossier.php
 RewriteRule ^deconnexion$ deconnexion.php
+RewriteRule ^affecteretudiant$ affecteretudiant.php
+RewriteRule ^fraisinscription$ fraisinscription.php
+RewriteRule ^premierertranche$ premierertranche.php
+RewriteRule ^deuxiemetranche$ deuxiemetranche.php
+RewriteRule ^troisiemetranche$ troisiemetranche.php
+RewriteRule ^enreolementpremiersemestre$ enreolementpremiersemestre.php
+RewriteRule ^enrolementdeuxiemesemestre$ enrolementdeuxiemesemestre.php
+RewriteRule ^enrolementrattrapage$ enrolementrattrapage.php
+RewriteRule ^paiementdettes$ paiementdettes.php
+RewriteRule ^reinscription$ reinscription.php
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RewriteRule ^esfraisinscription/([^/]+)/([^/]+)/([^/]+)$ esfraisinscription.php?classe=$1&salle=$2&annee_academique=$3 [L,QSA]
+RewriteRule ^espremieretranche/([^/]+)/([^/]+)/([^/]+)$ espremieretranche.php?classe=$1&salle=$2&annee_academique=$3 [L,QSA]
+RewriteRule ^esdeuxiemetranche/([^/]+)/([^/]+)/([^/]+)$ esdeuxiemetranche.php?classe=$1&salle=$2&annee_academique=$3 [L,QSA]
+RewriteRule ^estroisiemetranche/([^/]+)/([^/]+)/([^/]+)$ estroisiemetranche.php?classe=$1&salle=$2&annee_academique=$3 [L,QSA]
 
 
 

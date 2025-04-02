@@ -240,6 +240,12 @@ if(isset($_SESSION['jgm']) and !empty($_SESSION['jgm'])){
             })
 
 
+            $(document).on('click','.voirdossier', function(){
+                var id_dossier = $(this).attr('id')
+                location.href = 'dossiers/'+id_dossier
+            })
+
+
         })
     </script>
 </body>

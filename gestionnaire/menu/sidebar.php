@@ -57,8 +57,34 @@ if(isset($_SESSION['jgm']) and !empty($_SESSION['jgm'])){
                 <li class="nav-item"> <a class="nav-link" href="valideretudiant">Valider étudiant</a></li>
                 <li class="nav-item"> <a class="nav-link" href="capture">Capturer étudiant</a></li>
                 <li class="nav-item"> <a class="nav-link" href="archiverdossier">Archiver dossiers</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../pages/ui-features/typography.html">Affecter dans une classe</a></li>
+                <li class="nav-item"> <a class="nav-link" href="affecteretudiant">Affecter dans une classe</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../pages/ui-features/typography.html">Imprimer la carte</a></li>
+
+
+              </ul>
+            </div>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#payement_frais" aria-expanded="false" aria-controls="payement_frais">
+              
+            <i class="fa-solid fa-money-bill-1-wave menu-icon"></i>
+            <span class="menu-title">Paiment </span>
+              <i class="fa fa-arrow-circle-o-right"></i>
+            </a>
+            <div class="collapse" id="payement_frais">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="fraisinscription">Frais d'inscription</a></li>
+                <li class="nav-item"> <a class="nav-link" href="premierertranche">Première tranche</a></li>
+                <li class="nav-item"> <a class="nav-link" href="deuxiemetranche">Deuxième tranche</a></li>
+                <li class="nav-item"> <a class="nav-link" href="troisiemetranche">Troisième tranche</a></li>
+                <li class="nav-item"> <a class="nav-link" href="enreolementpremiersemestre">Enrôlement premier semestre</a></li>
+                <li class="nav-item"> <a class="nav-link" href="enrolementdeuxiemesemestre">Enrôlement deuxième semestre</a></li>
+                <li class="nav-item"> <a class="nav-link" href="enrolementrattrapage">Enrôlement rattrapage</a></li>
+                <li class="nav-item"> <a class="nav-link" href="paiementdettes">Paiement dettes</a></li>
+                <li class="nav-item"> <a class="nav-link" href="reinscription">Paiement réinscription</a></li>
+
 
 
               </ul>
