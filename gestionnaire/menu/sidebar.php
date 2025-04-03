@@ -79,7 +79,7 @@ if(isset($_SESSION['jgm']) and !empty($_SESSION['jgm'])){
                 <li class="nav-item"> <a class="nav-link" href="premierertranche">Première tranche</a></li>
                 <li class="nav-item"> <a class="nav-link" href="deuxiemetranche">Deuxième tranche</a></li>
                 <li class="nav-item"> <a class="nav-link" href="troisiemetranche">Troisième tranche</a></li>
-                <li class="nav-item"> <a class="nav-link" href="enreolementpremiersemestre">Enrôlement premier semestre</a></li>
+                <li class="nav-item"> <a class="nav-link" href="enrolementpremiersemestre">Enrôlement premier semestre</a></li>
                 <li class="nav-item"> <a class="nav-link" href="enrolementdeuxiemesemestre">Enrôlement deuxième semestre</a></li>
                 <li class="nav-item"> <a class="nav-link" href="enrolementrattrapage">Enrôlement rattrapage</a></li>
                 <li class="nav-item"> <a class="nav-link" href="paiementdettes">Paiement dettes</a></li>

@@ -59,14 +59,14 @@ if(isset($_SESSION['jgm']) and !empty($_SESSION['jgm'])){
                 AND aff.id_salle = ?
                 AND aff.id_annee_academique = ?
                 AND (pf.id_frais IS NULL OR pf.id_frais=?)");
-            $req->execute([$classe,$salle,$annee_academique,4]);
+            $req->execute([$classe,$salle,$annee_academique,5]);
 
             if($req->rowCount()!=0){
                 $mpdf = new \Mpdf\Mpdf();
                 // Début de la construction du tableau HTML
                 $html = '<p style="text-align:right;font-family:Verdana;">Kinshasa, le '.date('d/m/Y').'</p>';
                 $html .= '<div style="text-align:center;"><img src="../images/logo-eifi.png" style="width:100px;height:100px;"></div>';
-                $html .= '<h1 style="font-family:Verdana;text-align:center;">LISTE DES ÉTUDIANTS EN ORDRE AVEC LA TROISIÈME TRANCHE POUR L\'ANNÉE ACADÉMIQUE '.$libelle_annee_academique.'</h1>';
+                $html .= '<h1 style="font-family:Verdana;text-align:center;">LISTE DES ÉTUDIANTS EN ORDRE AVEC L\'ENROLEMENT DU PREMIER SEMESTRE POUR L\'ANNÉE ACADÉMIQUE '.$libelle_annee_academique.'</h1>';
                 $html .= '<h2 style="font-family:Verdana;text-align:center;">CLASSE : '.$libelle_classe.' '.$libelle_salle.'</h2>';
                 $html .= '<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">';
                 $html .= '<thead>';

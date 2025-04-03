@@ -12,7 +12,7 @@ RewriteRule ^fraisinscription$ fraisinscription.php
 RewriteRule ^premierertranche$ premierertranche.php
 RewriteRule ^deuxiemetranche$ deuxiemetranche.php
 RewriteRule ^troisiemetranche$ troisiemetranche.php
-RewriteRule ^enreolementpremiersemestre$ enreolementpremiersemestre.php
+RewriteRule ^enrolementpremiersemestre$ enrolementpremiersemestre.php
 RewriteRule ^enrolementdeuxiemesemestre$ enrolementdeuxiemesemestre.php
 RewriteRule ^enrolementrattrapage$ enrolementrattrapage.php
 RewriteRule ^paiementdettes$ paiementdettes.php
@@ -37,6 +37,16 @@ RewriteRule ^esfraisinscription/([^/]+)/([^/]+)/([^/]+)$ esfraisinscription.php?
 RewriteRule ^espremieretranche/([^/]+)/([^/]+)/([^/]+)$ espremieretranche.php?classe=$1&salle=$2&annee_academique=$3 [L,QSA]
 RewriteRule ^esdeuxiemetranche/([^/]+)/([^/]+)/([^/]+)$ esdeuxiemetranche.php?classe=$1&salle=$2&annee_academique=$3 [L,QSA]
 RewriteRule ^estroisiemetranche/([^/]+)/([^/]+)/([^/]+)$ estroisiemetranche.php?classe=$1&salle=$2&annee_academique=$3 [L,QSA]
+RewriteRule ^esenrolementpremiersemestre/([^/]+)/([^/]+)/([^/]+)$ esenrolementpremiersemestre.php?classe=$1&salle=$2&annee_academique=$3 [L,QSA]
+RewriteRule ^esenrolementdeuxiemesemestre/([^/]+)/([^/]+)/([^/]+)$ esenrolementdeuxiemesemestre.php?classe=$1&salle=$2&annee_academique=$3 [L,QSA]
+RewriteRule ^esenrolementrattrapage/([^/]+)/([^/]+)/([^/]+)$ esenrolementrattrapage.php?classe=$1&salle=$2&annee_academique=$3 [L,QSA]
+RewriteRule ^espaiementdettes/([^/]+)/([^/]+)/([^/]+)$ espaiementdettes.php?classe=$1&salle=$2&annee_academique=$3 [L,QSA]
+RewriteRule ^esreinscription/([^/]+)/([^/]+)/([^/]+)$ esreinscription.php?classe=$1&salle=$2&annee_academique=$3 [L,QSA]
+
+
+
+
+
 
 
 

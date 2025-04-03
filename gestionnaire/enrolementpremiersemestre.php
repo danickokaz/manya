@@ -245,7 +245,7 @@ if(isset($_SESSION['jgm']) and !empty($_SESSION['jgm'])){
                 event.preventDefault()
                 $("#btnVoirEtudiants").text('Chargement...')
                 $.ajax({
-                    url: 'traitement/tableau_etudiants_paiement_dettes.php',
+                    url: 'traitement/tableau_etudiants_enrolement_premier_semestre.php',
                     method:'POST',
                     data:{
                         annee_academique: annee_academique,
@@ -276,7 +276,7 @@ if(isset($_SESSION['jgm']) and !empty($_SESSION['jgm'])){
                 var salle = $("#salle").val()
          
                 $.ajax({
-                    url: 'traitement/tableau_etudiants_paiement_dettes.php',
+                    url: 'traitement/tableau_etudiants_enrolement_premier_semestre.php',
                     method:'POST',
                     data:{
                         annee_academique: annee_academique,
@@ -298,7 +298,7 @@ if(isset($_SESSION['jgm']) and !empty($_SESSION['jgm'])){
                 event.preventDefault()
                 var id = $(this).attr('id')
                 $.ajax({
-                    url: 'traitement/valider_pour_paiement_dettes.php',
+                    url: 'traitement/valider_pour_enrolement_premier_semestre.php',
                     method: 'POST',
                     data: {id:id},
                     dataType: 'text',
